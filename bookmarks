@@ -1,0 +1,10 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("floobits-matsen-1816"
+ (filename . "~/.floobits/share/matsen/genome_app/outline.md")
+ (front-context-string . "\nRearrangement g")
+ (rear-context-string . "ells are great.\n")
+ (position . 52))
+)
