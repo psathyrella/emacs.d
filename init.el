@@ -86,6 +86,10 @@
 			   (local-set-key (kbd "\C-c\C-e") 'insert-cendl)
 			   ))
 
+(add-hook 'git-commit-mode-hook (lambda ()
+			     (local-set-key (kbd "C-c c")    'git-commit-commit)
+			     ))
+
 (add-hook 'diff-mode-hook (lambda ()
 			     (local-set-key (kbd "C-c h")    'diff-refine-hunk)
 			     ))
