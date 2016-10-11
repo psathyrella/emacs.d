@@ -70,8 +70,8 @@
 (defun insert-cendl ()
   "Insert basic cout line"
   (interactive)
-  (insert "std::cout << \"\" << std::endl;")
-  (backward-char 15)
+  (insert "cout << \"\" << endl;")
+  (backward-char 10)
   )
 
 (defun move-ten-lines-up ()
@@ -80,3 +80,8 @@
 (defun move-ten-lines-down ()
   (interactive)
   (next-line 10))
+
+(require 'ansi-color)
+(defun display-ansi-colors ()
+  (interactive)
+    (ansi-color-apply-on-region (point-min) (point-max)))

@@ -18,8 +18,15 @@
 ;; not sure what this was for. does shit break when I comment it?
 ;;(add-to-list 'load-path "~/.emacs.d/")
 
+;; ;; edit server for chrome extension (NOTE doesn't seem to work without xemacs)
+;; (add-to-list 'load-path "~/.emacs.d/edit-server")
+;; (require 'edit-server)
+;; (edit-server-start)
+
 (require 'package)
 ;;(require 'ess-site)
+(add-to-list 'package-archives
+	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
