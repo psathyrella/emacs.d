@@ -16,7 +16,8 @@
 
 
 ;; not sure what this was for. does shit break when I comment it?
-;;(add-to-list 'load-path "~/.emacs.d/")
+;; (add-to-list 'load-path "~/.emacs.d/")
+;;(add-to-list `load-path "~/.emacs.d/vlfi")
 
 ;; ;; edit server for chrome extension (NOTE doesn't seem to work without xemacs)
 ;; (add-to-list 'load-path "~/.emacs.d/edit-server")
