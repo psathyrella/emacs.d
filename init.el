@@ -147,6 +147,7 @@
  ;; If there is more than one, they won't work right.
  '(line-number-display-limit-width 10000)
  '(menu-bar-mode nil)
+ '(package-selected-packages (quote (ess yaml-mode markdown-mode magit floobits)))
  '(truncate-lines t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -157,8 +158,15 @@
  '(ediff-fine-diff-A ((t (:background "white" :foreground "black" :weight bold))))
  '(ediff-fine-diff-B ((t (:background "white" :foreground "black"))))
  '(font-lock-comment-face ((nil (:foreground "red"))))
+ '(magit-diff-added ((((type tty)) (:foreground "green"))))
+ '(magit-diff-added-highlight ((((type tty)) (:foreground "LimeGreen"))))
+ '(magit-diff-context-highlight ((((type tty)) (:foreground "default"))))
+ '(magit-diff-file-heading ((((type tty)) nil)))
  '(magit-diff-none ((t nil)))
- '(magit-item-highlight ((t (:background "black" :foreground "white")))))
+ '(magit-diff-removed ((((type tty)) (:foreground "red"))))
+ '(magit-diff-removed-highlight ((((type tty)) (:foreground "IndianRed"))))
+ '(magit-item-highlight ((t (:background "black" :foreground "white"))))
+ '(magit-section-highlight ((((type tty)) nil))))
 
 ;; had this earlier but it seemed to get overwritten by something else
 (setq auto-mode-alist (cons '("\\.h$" .   c++-mode)  auto-mode-alist))
