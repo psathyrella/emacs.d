@@ -44,8 +44,7 @@
 (setq frame-title-format ;; default to better frame titles
       (concat  "%b - emacs@" (system-name)))
 
-;;----------------------------------------------------------------------------------------
-;;
+;; ----------------------------------------------------------------------------------------
 (setq diff-switches "-u") ;; default to unified diffs
 
 ;; ----------------------------------------------------------------------------------------
@@ -53,14 +52,10 @@
 (global-unset-key (kbd "C-x o")) ;; only want to use the ones below for window switching
 
 ;; window movements
-(defun select-previous-window ()
-  (interactive)
-  (select-window (previous-window)))
-(defun select-next-window ()
-  (interactive)
-  (select-window (next-window)))
-(global-set-key (kbd "M-[")  'select-previous-window)
-(global-set-key (kbd "M-]") 'select-next-window)
+(global-set-key (kbd "M-,") 'windmove-left)
+(global-set-key (kbd "M-.") 'windmove-right)
+(global-set-key (kbd "M-j") 'windmove-down)
+(global-set-key (kbd "M-k") 'windmove-up)
 
 ;;----------------------------------------------------------------------------------------
 (defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
