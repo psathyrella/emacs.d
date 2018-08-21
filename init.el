@@ -52,10 +52,11 @@
 (global-unset-key (kbd "C-x o")) ;; only want to use the ones below for window switching
 
 ;; window movements
-(global-set-key (kbd "M-m") 'windmove-left)  ;; NOTE this used to be "M-[" (well, also used to be slightly different fcn call), but if you set _anything_ to "M-[", the middle-mouse-button pasting breaks (pastes extra characters). I think this also resolved the extra special characters on opening some files? but not sure)
-(global-set-key (kbd "M-,") 'windmove-right)
-(global-set-key (kbd "M-j") 'windmove-down)
-(global-set-key (kbd "M-k") 'windmove-up)
+(global-set-key (kbd "M-j") 'windmove-left)  ;; NOTE this used to be "M-[" (well, also used to be slightly different fcn call), but if you set _anything_ to "M-[", the middle-mouse-button pasting breaks (pastes extra characters). I think this also resolved the extra special characters on opening some files? but not sure)
+(global-set-key (kbd "M-k") 'windmove-right)
+(global-set-key (kbd "M-m") 'windmove-down)
+(global-unset-key (kbd "M-i"))
+(global-set-key (kbd "M-i") 'windmove-up)
 
 ;;----------------------------------------------------------------------------------------
 (defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
