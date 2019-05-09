@@ -61,6 +61,11 @@
 \\end{columns}
 "))
 
+(defun insert-beamer-url ()
+  "Insert beamer url start"
+  (interactive)
+  (insert "{\\tiny {\\color{blue}\\url{"))
+
 (defun insert-setw ()
   "Insert setw"
   (interactive)
