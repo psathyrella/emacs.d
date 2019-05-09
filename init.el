@@ -141,9 +141,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(case-fold-search t)
  '(line-number-display-limit-width 10000)
  '(menu-bar-mode nil)
- '(package-selected-packages (quote (ess yaml-mode markdown-mode magit floobits)))
+ '(package-selected-packages
+   (quote
+    (0blayout ess yaml-mode markdown-mode magit floobits)))
  '(truncate-lines t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
