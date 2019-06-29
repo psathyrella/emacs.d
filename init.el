@@ -161,6 +161,8 @@
  '(magit-diff-base ((t (:foreground "#ffffcc"))))
  '(magit-diff-base-highlight ((t (:foreground "#eeeebb"))))
  '(magit-diff-file-heading-highlight ((t nil)))
+ '(magit-diff-hunk-heading ((t (:background "grey25" :foreground "blue" :weight bold))))
+ '(magit-diff-hunk-heading-highlight ((t (:background "grey35" :foreground "blue" :weight bold))))
  '(magit-diff-none ((t nil)))
  '(magit-diff-removed ((t (:foreground "red"))))
  '(magit-diff-removed-highlight ((t (:foreground "red"))))
