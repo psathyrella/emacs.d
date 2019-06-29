@@ -1,0 +1,5 @@
+magit diff faces are screwed up:
+  - faces different within tmux vs without
+  - use customize-apropos on 'magit diff' or something to view/set all of the faces
+  - if you carefully customize all the faces so it looks nice, everything getting saved to init.el, and then start a new emacs session, it doesn\'t end up the same
+    - I don\'t know why, but it\'s probably best to just accept it and mess around a bit on startup

@@ -156,7 +156,14 @@
  '(ediff-fine-diff-A ((t (:background "white" :foreground "black" :weight bold))))
  '(ediff-fine-diff-B ((t (:background "white" :foreground "black"))))
  '(font-lock-comment-face ((nil (:foreground "red"))))
+ '(magit-diff-added ((t (:foreground "#335533"))))
+ '(magit-diff-added-highlight ((t (:foreground "green"))))
+ '(magit-diff-base ((t (:foreground "#ffffcc"))))
+ '(magit-diff-base-highlight ((t (:foreground "#eeeebb"))))
+ '(magit-diff-file-heading-highlight ((t nil)))
  '(magit-diff-none ((t nil)))
+ '(magit-diff-removed ((t (:foreground "red"))))
+ '(magit-diff-removed-highlight ((t (:foreground "red"))))
  '(magit-item-highlight ((t (:background "black" :foreground "white")))))
 
 ;; had this earlier but it seemed to get overwritten by something else
