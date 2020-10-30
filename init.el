@@ -95,7 +95,7 @@
 			     ))
 
 (add-hook 'diff-mode-hook (lambda ()
-			     (local-set-key (kbd "C-c h")    'diff-refine-hunk)
+			     (local-set-key (kbd "C-c h")    'magit-refine-next-hunk)
 			     ))
 
 (add-hook 'magit-mode-hook (lambda ()
