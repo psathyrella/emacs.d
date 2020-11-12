@@ -52,7 +52,7 @@
 (global-unset-key (kbd "C-x o")) ;; only want to use the ones below for window switching
 
 ;; window movements
-;; (global-unset-key (kbd "M-h"))
+(global-unset-key (kbd "M-h"))
 (global-set-key (kbd "M-h") 'windmove-left)  ;; NOTE this used to be "M-[" (well, also used to be slightly different fcn call), but if you set _anything_ to "M-[", the middle-mouse-button pasting breaks (pastes extra characters). I think this also resolved the extra special characters on opening some files? but not sure)
 (global-set-key (kbd "M-l") 'windmove-right)
 (global-set-key (kbd "M-j") 'windmove-down)
@@ -166,6 +166,11 @@
  '(magit-diff-none ((t nil)))
  '(magit-diff-removed ((t (:foreground "red"))))
  '(magit-diff-removed-highlight ((t (:foreground "red"))))
+ ;; '(magit-diff-added ((t (:foreground "LimeGreen"))))
+ ;; '(magit-diff-added-highlight ((t (:foreground "LimeGreen"))))
+ ;; '(magit-diff-none ((t nil)))
+ ;; '(magit-diff-removed ((t (:foreground "red"))))
+ ;; '(magit-diff-removed-highlight ((t (:foreground "IndianRed"))))
  '(magit-item-highlight ((t (:background "black" :foreground "white")))))
 
 ;; had this earlier but it seemed to get overwritten by something else
