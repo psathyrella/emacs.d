@@ -27,6 +27,7 @@
 (defun insert-itemize ()
   "Insert itemize stuff at cursor point."
   (interactive)
+  (set-mark (point))
   (insert "\\begin{itemize}
 \\item
 \\end{itemize}
