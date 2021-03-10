@@ -67,6 +67,10 @@
   (interactive)
   (insert "{\\tiny {\\color{blue}\\url{"))
 
+(defun insert-beamer-color ()
+  (interactive)
+  (insert "{\\color{}}"))
+
 (defun insert-setw ()
   "Insert setw"
   (interactive)

@@ -115,6 +115,7 @@
 			     (local-set-key (kbd "\C-ce") 'insert-center)
 			     (local-set-key (kbd "\C-cf") 'insert-frame)
 			     (local-set-key (kbd "\C-cl") 'insert-beamer-url)
+			     (local-set-key (kbd "\C-co") 'insert-beamer-color)
 			     (local-set-key (kbd "\C-j") 'newline-and-indent)
 			     ))
 
