@@ -54,6 +54,7 @@
 (defun insert-columns ()
   "Insert beamer columns at cursor point."
   (interactive)
+  (set-mark (point))
   (insert "\\begin{columns}
 \\begin{column}{0.5\\textwidth}
 \\end{column}
