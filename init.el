@@ -108,7 +108,7 @@
 
 (add-hook 'latex-mode-hook (lambda()
 			     (flyspell-mode)
-			     (local-unset-key (kbd "\C-j"))
+			     (local-unset-key (kbd "\C-cj"))
 			     (local-unset-key (kbd "\C-c\C-p"))
 			     (local-set-key (kbd "\C-ci") 'insert-itemize)
 			     (local-set-key (kbd "\C-cc") 'insert-columns)
@@ -116,7 +116,7 @@
 			     (local-set-key (kbd "\C-cf") 'insert-frame)
 			     (local-set-key (kbd "\C-cl") 'insert-beamer-url)
 			     (local-set-key (kbd "\C-co") 'insert-beamer-color)
-			     (local-set-key (kbd "\C-j") 'newline-and-indent)
+			     (local-set-key (kbd "\C-cj") 'electric-newline-and-maybe-indent)
 			     ))
 
 ;; ;;----------------------------------------------------------------------------------------
