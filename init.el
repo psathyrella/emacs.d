@@ -172,7 +172,8 @@
  '(magit-diff-removed ((t (:foreground "red"))))
  '(magit-diff-removed-highlight ((t (:foreground "red"))))
  '(magit-item-highlight ((t (:background "black" :foreground "white"))))
- '(magit-section-highlight ((t (:extend t :background "black")))))
+ '(magit-section-highlight ((t (:extend t :background "black"))))
+ '(minibuffer-prompt ((t (:foreground "cyan")))))
 
 ;; had this earlier but it seemed to get overwritten by something else
 (setq auto-mode-alist (cons '("\\.h$" .   c++-mode)  auto-mode-alist))
