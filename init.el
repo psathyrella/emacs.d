@@ -146,13 +146,16 @@
  '(case-fold-search t)
  '(line-number-display-limit-width 10000)
  '(menu-bar-mode nil)
- '(package-selected-packages (quote (yaml-mode markdown-mode magit floobits)))
+ '(package-selected-packages '(yaml-mode markdown-mode magit floobits))
  '(truncate-lines t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(diff-refine-added ((t (:inherit diff-refine-changed :background "unspecified"))))
+ '(diff-refine-changed ((t (:background "unspecified" :inverse-video t))))
+ '(diff-refine-removed ((t (:inherit diff-refine-changed :background "unspecified"))))
  '(ediff-current-diff-B ((t (:background "yellow3" :foreground "black" :weight bold))))
  '(ediff-fine-diff-A ((t (:background "white" :foreground "black" :weight bold))))
  '(ediff-fine-diff-B ((t (:background "white" :foreground "black"))))
@@ -161,18 +164,15 @@
  '(magit-diff-added-highlight ((t (:foreground "green"))))
  '(magit-diff-base ((t (:foreground "#ffffcc"))))
  '(magit-diff-base-highlight ((t (:foreground "#eeeebb"))))
+ '(magit-diff-context-highlight ((t (:extend t :background "unspecified" :foreground "green"))))
  '(magit-diff-file-heading-highlight ((t nil)))
  '(magit-diff-hunk-heading ((t (:background "grey25" :foreground "blue" :weight bold))))
  '(magit-diff-hunk-heading-highlight ((t (:background "grey35" :foreground "blue" :weight bold))))
  '(magit-diff-none ((t nil)))
  '(magit-diff-removed ((t (:foreground "red"))))
  '(magit-diff-removed-highlight ((t (:foreground "red"))))
- ;; '(magit-diff-added ((t (:foreground "LimeGreen"))))
- ;; '(magit-diff-added-highlight ((t (:foreground "LimeGreen"))))
- ;; '(magit-diff-none ((t nil)))
- ;; '(magit-diff-removed ((t (:foreground "red"))))
- ;; '(magit-diff-removed-highlight ((t (:foreground "IndianRed"))))
- '(magit-item-highlight ((t (:background "black" :foreground "white")))))
+ '(magit-item-highlight ((t (:background "black" :foreground "white"))))
+ '(magit-section-highlight ((t (:extend t :background "black")))))
 
 ;; had this earlier but it seemed to get overwritten by something else
 (setq auto-mode-alist (cons '("\\.h$" .   c++-mode)  auto-mode-alist))
