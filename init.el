@@ -1,3 +1,8 @@
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+;; (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.2")
+(require 'tls)
+(push "/usr/local/etc/libressl/cert.pem" gnutls-trustfiles)
+
 ;;----------------------------------------------------------------------------------------
 ;; load separate init files
 (defconst user-init-dir
@@ -14,7 +19,6 @@
 
 (load-user-file "functions.el")
 
-
 ;; not sure what this was for. does shit break when I comment it?
 ;; (add-to-list 'load-path "~/.emacs.d/")
 ;;(add-to-list `load-path "~/.emacs.d/vlfi")
@@ -28,8 +32,12 @@
 ;;(require 'ess-site)
 (add-to-list 'package-archives
 	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;; (add-to-list 'package-archives
+;;              '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;; (add-to-list 'package-archives
+;;              '("melpa" . "http://melpa.org/packages/") t)
+;; '(package-archives   '(("gnu" . "http://elpa.gnu.org/packages/")     ("melpa" . "http://www.mirrorservice.org/sites/stable.melpa.org/packages/")))
+;; (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
 ;; don't load this unless I'm actually using it
@@ -146,7 +154,8 @@
  '(case-fold-search t)
  '(line-number-display-limit-width 10000)
  '(menu-bar-mode nil)
- '(package-selected-packages '(yaml-mode markdown-mode magit floobits))
+ '(package-selected-packages
+   '(magit dash yaml-mode transient markdown-mode git-commit floobits))
  '(truncate-lines t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -182,3 +191,4 @@
 (setq-default major-mode 'conf-mode) ;; make conf-mode the default mode
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+(setq-default indent-tabs-mode nil)
