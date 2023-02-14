@@ -169,6 +169,7 @@
  '(ediff-fine-diff-A ((t (:background "white" :foreground "black" :weight bold))))
  '(ediff-fine-diff-B ((t (:background "white" :foreground "black"))))
  '(font-lock-comment-face ((nil (:foreground "red"))))
+ '(font-lock-string-face ((t (:foreground "green"))))
  '(magit-diff-added ((t (:foreground "#335533"))))
  '(magit-diff-added-highlight ((t (:foreground "green"))))
  '(magit-diff-base ((t (:foreground "#ffffcc"))))
@@ -186,7 +187,7 @@
 
 ;; had this earlier but it seemed to get overwritten by something else
 (setq auto-mode-alist (cons '("\\.h$" .   c++-mode)  auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.txt$" .   conf-mode)  auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.txt$" .   markdown-mode)  auto-mode-alist))  ;; used to be conf-mode
 (setq auto-mode-alist (cons '("SConstruct" .   python-mode)  auto-mode-alist))
 (setq auto-mode-alist (cons '("SConscript" .   python-mode)  auto-mode-alist))
 (setq-default major-mode 'conf-mode) ;; make conf-mode the default mode
