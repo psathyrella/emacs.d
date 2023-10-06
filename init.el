@@ -173,7 +173,7 @@
  '(magit-diff-added-highlight ((t (:foreground "green"))))
  '(magit-diff-base ((t (:foreground "#ffffcc"))))
  '(magit-diff-base-highlight ((t (:foreground "#eeeebb"))))
- '(magit-diff-context-highlight ((t (:extend t :background "unspecified" :foreground "green"))))
+ '(magit-diff-context-highlight ((t (:extend t :background "unspecified" :foreground "grey"))))
  '(magit-diff-file-heading-highlight ((t nil)))
  '(magit-diff-hunk-heading ((t (:background "grey25" :foreground "blue" :weight bold))))
  '(magit-diff-hunk-heading-highlight ((t (:background "grey35" :foreground "blue" :weight bold))))
@@ -186,7 +186,7 @@
 
 ;; had this earlier but it seemed to get overwritten by something else
 (setq auto-mode-alist (cons '("\\.h$" .   c++-mode)  auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.txt$" .   conf-mode)  auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.txt$" .   text-mode)  auto-mode-alist))
 (setq auto-mode-alist (cons '("SConstruct" .   python-mode)  auto-mode-alist))
 (setq auto-mode-alist (cons '("SConscript" .   python-mode)  auto-mode-alist))
 (setq-default major-mode 'conf-mode) ;; make conf-mode the default mode
