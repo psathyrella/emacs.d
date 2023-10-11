@@ -175,7 +175,7 @@
  '(font-lock-variable-name-face ((t (:foreground "yellow" :weight light))))
  '(magit-diff-base ((t (:foreground "#ffffcc"))))
  '(magit-diff-base-highlight ((t (:foreground "#eeeebb"))))
- '(magit-diff-context-highlight ((t (:extend t :background "unspecified" :foreground "green"))))
+ '(magit-diff-context-highlight ((t (:extend t :background "unspecified" :foreground "grey"))))
  '(magit-diff-file-heading-highlight ((t nil)))
  '(magit-diff-hunk-heading ((t (:background "grey25" :foreground "blue" :weight bold))))
  '(magit-diff-hunk-heading-highlight ((t (:background "grey35" :foreground "blue" :weight bold))))
