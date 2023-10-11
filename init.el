@@ -184,6 +184,7 @@
  '(magit-diff-hunk-heading-highlight ((t (:extend t :background "black" :foreground "blue" :weight bold))))
  '(magit-diff-removed ((t (:extend t :foreground "red"))))
  '(magit-diff-removed-highlight ((t (:extend t :foreground "red"))))
+ ;; '(magit-diff-none ((t nil)))
  '(magit-item-highlight ((t (:background "black" :foreground "white"))))
  '(magit-section-highlight ((t (:extend t :background "black"))))
  '(minibuffer-prompt ((t (:foreground "cyan")))))
