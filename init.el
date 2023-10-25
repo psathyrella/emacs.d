@@ -171,7 +171,7 @@
  '(font-lock-builtin-face ((t (:foreground "dodgerblue" :weight bold))))
  '(font-lock-comment-face ((nil (:foreground "red"))))
  '(font-lock-constant-face ((t (:foreground "aquamarine" :weight bold))))
- '(font-lock-function-name-face ((t (:foreground "brightblue" :weight bold))))
+ ;; '(font-lock-function-name-face ((t (:foreground "brightblue" :weight bold))))  ;; brightblue is nice on some machines but at least in emacs, when using tmux, it's not one of the 8 colors available
  '(font-lock-keyword-face ((t (:foreground "Cyan" :weight bold))))
  '(font-lock-string-face ((t (:foreground "green"))))
  '(font-lock-variable-name-face ((t (:foreground "yellow" :weight light))))
