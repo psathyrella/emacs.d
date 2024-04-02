@@ -1,7 +1,7 @@
-(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+;; (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 ;; (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.2")
 (require 'tls)
-(push "/usr/local/etc/libressl/cert.pem" gnutls-trustfiles)
+;; (push "/usr/local/etc/libressl/cert.pem" gnutls-trustfiles)
 
 ;;----------------------------------------------------------------------------------------
 ;; load separate init files
@@ -31,7 +31,9 @@
 (require 'package)
 ;;(require 'ess-site)
 (add-to-list 'package-archives
-	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
+             '("melpa" . "https://melpa.org/packages/") t)
+;; (add-to-list 'package-archives
+;; 	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
 ;; (add-to-list 'package-archives
 ;;              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 ;; (add-to-list 'package-archives
