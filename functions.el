@@ -47,7 +47,7 @@
   \\begin{itemize}
   \\item
   \\end{itemize}
-  % \\includegraphics[scale=0.21]{}
+  % \\includegraphics[scale=0.21]{plots/}
 \\end{frame}
 "))
 
