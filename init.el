@@ -86,6 +86,10 @@
 (define-key my-keys-minor-mode-map (kbd "C-c d") 'ediff-buffers)
 (define-key my-keys-minor-mode-map (kbd "C-c s") 'magit-status)
 (define-key my-keys-minor-mode-map (kbd "C-x g") 'keyboard-quit)
+(define-key my-keys-minor-mode-map (kbd "M-h") 'windmove-left)  ;; NOTE this used to be "M-[" (well, also used to be slightly different fcn call), but if you set _anything_ to "M-[", the middle-mouse-button pasting breaks (pastes extra characters). I think this also resolved the extra special characters on opening some files? but not sure)
+(define-key my-keys-minor-mode-map (kbd "M-l") 'windmove-right)
+(define-key my-keys-minor-mode-map (kbd "M-j") 'windmove-down)
+(define-key my-keys-minor-mode-map (kbd "M-k") 'windmove-up)
 
 (define-minor-mode my-keys-minor-mode
   "A minor mode so that my key settings override annoying major modes."
