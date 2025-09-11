@@ -72,6 +72,7 @@
 (defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
 
 (define-key my-keys-minor-mode-map (kbd "C-c C-c") 'comment-or-uncomment-region)
+(define-key my-keys-minor-mode-map (kbd "C-c l") 'insert-noqa-long-line)
 (define-key my-keys-minor-mode-map (kbd "C-c -") 'insert-dashed-comment-line)
 (define-key my-keys-minor-mode-map (kbd "C-c C-p") 'move-ten-lines-up)
 (define-key my-keys-minor-mode-map (kbd "C-c C-n") 'move-ten-lines-down)
@@ -91,9 +92,16 @@
 (define-key my-keys-minor-mode-map (kbd "M-j") 'windmove-down)
 (define-key my-keys-minor-mode-map (kbd "M-k") 'windmove-up)
 
+;; (define-minor-mode my-keys-minor-mode
+;;   "A minor mode so that my key settings override annoying major modes."
+;;   t " my-keys" 'my-keys-minor-mode-map)
+
+;; this version should fix warning, but i'm not positive it works otherwise
 (define-minor-mode my-keys-minor-mode
   "A minor mode so that my key settings override annoying major modes."
-  t " my-keys" 'my-keys-minor-mode-map)
+  :init-value t
+  :lighter " my-keys"
+  :keymap my-keys-minor-mode-map)
 
 (my-keys-minor-mode 1)
 

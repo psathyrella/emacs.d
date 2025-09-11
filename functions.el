@@ -1,6 +1,12 @@
+(defun insert-noqa-long-line()
+ (interactive)
+ (end-of-line)
+ (insert "  # noqa: E741")
+)
+
 (defun insert-dashed-comment-line()
  (interactive)
- (move-beginning-of-line nil)
+ (beginning-of-line)
  (insert "----------------------------------------------------------------------------------------
 ")
  (previous-line)
@@ -10,6 +16,8 @@
  (previous-line)
 ;; (indent-for-tab-command)
 )
+
+;; TODO should change all (move-<stuff> nil) calls to (stuff)
 
 (defun kill-line-backward()
  (interactive)
