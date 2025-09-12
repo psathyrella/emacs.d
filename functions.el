@@ -2,6 +2,7 @@
  (interactive)
  (end-of-line)
  (insert "  # noqa: E741")
+ (beginning-of-line)
 )
 
 (defun insert-dashed-comment-line()
