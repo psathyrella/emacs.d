@@ -1,3 +1,11 @@
+(defun insert-sys-exit()
+  (interactive)
+  (set-mark (point))
+  (insert "import sys; sys.exit()
+")
+(indent-for-tab-command)
+)
+
 (defun insert-noqa-long-line()
  (interactive)
  (end-of-line)

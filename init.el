@@ -73,6 +73,7 @@
 
 (define-key my-keys-minor-mode-map (kbd "C-c C-c") 'comment-or-uncomment-region)
 (define-key my-keys-minor-mode-map (kbd "C-c l") 'insert-noqa-long-line)
+(define-key my-keys-minor-mode-map (kbd "C-c x") 'insert-sys-exit)
 (define-key my-keys-minor-mode-map (kbd "C-c -") 'insert-dashed-comment-line)
 (define-key my-keys-minor-mode-map (kbd "C-c C-p") 'move-ten-lines-up)
 (define-key my-keys-minor-mode-map (kbd "C-c C-n") 'move-ten-lines-down)
